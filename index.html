@@ -1,178 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>MY PORTFOLIA</title>
-    <script src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div class="container">
-    <!-- main-section -->
-     <div class="main">
 
-  <nav class="navigation">
-        <button onclick="showPage('about')">About</button>
-        <button onclick="showPage('Resume')">Resume</button>
-        <button onclick="showPage('portfolio')">Portfolio</button>
-        <button onclick="showPage('blog')">Blog</button>
-        <button onclick="showPage('contact')">Contact</button>
-  </nav>
+    <div class="container">
+
+        <!-- Main Section -->
+        <div class="main">
+
+            <!-- Navigation -->
+            <nav class="navigation">
+
+                <button onclick="showPage('about')">
+                    About
+                </button>
+
+                <button onclick="showPage('resume')">
+                    Resume
+                </button>
+
+                <button onclick="showPage('portfolio')">
+                    Portfolio
+                </button>
+
+                <button onclick="showPage('blog')">
+                    Blog
+                </button>
+
+                <button onclick="showPage('contact')">
+                    Contact
+                </button>
+
+            </nav>
 
 
+            <!-- ================= ABOUT ================= -->
 
-    <section id="Resume" class="active">
-        <header>
-            <h1>Resume</h1>
-            <div class="line"></div>
+            <section id="about" class="active">
 
-        </header>
+                <div class="header-about">
+
+                    <h1>About Me</h1>
+
+                    <hr>
+
+                    <p>
+                        I'm a Software Engineering student from Puntland, Somalia,
+                        currently studying at Arba Minch University in Ethiopia.
+                        I enjoy developing websites and turning ideas into simple,
+                        beautiful, and user-friendly designs.
+
+                        <br><br>
+
+                        My goal is to build functional and attractive websites
+                        while continuously improving my programming and design
+                        skills through practical projects and learning.
+                    </p>
+
+                </div>
 
 
-    <div class="Education">
-                <div class="head">
-                   <i class="fa-solid fa-book-open"></i>
-                    <h3>Education</h3>
-                    <div class="hr"></div>
-                     </div>
-                    <div class="educational-detail">
-                        <h2>Arbaminch university of technology</h2>
-                        <span>2024-Present</span>
-                        <p>I began my university journey in 2024 at Arba Minch University in Ethiopia, where I am currently pursuing my studies in Software Engineering. My academic journey is still ongoing, and I continue to develop my knowledge and skills through my university education and practical projects.</p>
+                <!-- What I'm Doing -->
+
+                <div class="about-bottom">
+
+                    <h2>What I'm Doing</h2>
+
+                    <div class="grid">
+
+                        <!-- Web Design -->
+                        <div class="service-card">
+
+                            <div class="service-description">
+
+                                <h2>Web Design</h2>
+
+                                <p>
+                                    The most modern and high-quality designs
+                                    made at a professional level.
+                                </p>
+
+                            </div>
+
+                            <div class="service-icon">
+
+                                <i class="fa-solid fa-pen-to-square"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Web Development -->
+                        <div class="service-card">
+
+                            <div class="service-description">
+
+                                <h2>Web Development</h2>
+
+                                <p>
+                                    High-quality development of websites
+                                    at a professional level.
+                                </p>
+
+                            </div>
+
+                            <div class="service-icon">
+
+                                <i class="fa-solid fa-laptop-code"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Mobile Apps -->
+                        <div class="service-card">
+
+                            <div class="service-description">
+
+                                <h2>Mobile Apps</h2>
+
+                                <p>
+                                    Professional development of applications
+                                    for iOS and Android.
+                                </p>
+
+                            </div>
+
+                            <div class="service-icon">
+
+                                <i class="fa-solid fa-mobile-screen"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Photography -->
+                        <div class="service-card">
+
+                            <div class="service-description">
+
+                                <h2>Photography</h2>
+
+                                <p>
+                                    I make high-quality photos of different
+                                    categories at a professional level.
+                                </p>
+
+                            </div>
+
+                            <div class="service-icon">
+
+                                <i class="fa-solid fa-camera-retro"></i>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                
+
+                </div>
+
+
+                <!-- Testimonials -->
+
+                <div class="about-bottom-2">
+
+                    <h2>Testimonials</h2>
+
+                    <div class="testimonials">
+
+                        <div class="testimonial-card">
+
+                            <div class="avatar">
+
+                                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-1.png"
+                                    alt="Daniel Lewis">
+
+                            </div>
+
+                            <div class="testimonial-content">
+
+                                <h2>Daniel Lewis</h2>
+
+                                <p>
+                                    Richard was hired to create a corporate
+                                    identity. We were very pleased with the work.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="testimonial-card">
+
+                            <div class="avatar">
+
+                                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-2.png"
+                                    alt="Jessica Miller">
+
+                            </div>
+
+                            <div class="testimonial-content">
+
+                                <h2>Jessica Miller</h2>
+
+                                <p>
+                                    Richard was hired to create a corporate
+                                    identity. We were very pleased with the work.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RESUME ================= -->
+
+            <section id="resume">
+
+                <header>
+
+                    <h1>Resume</h1>
+
+                    <div class="line"></div>
+
+                </header>
+
+
+                <!-- Education -->
+
+               <div class="resume-section">
+
+        <div class="section-title">
+            <div class="title-icon">
+                <i class="fa-solid fa-book-open"></i>
             </div>
- 
-           
-        </section>
 
-        <section id="about" >
-          <div class="header-about"><h1>About Me</h1>
-            <hr>
-            <p>I'm Creative Director and UI/UX Designer from Puntland, Somalia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-  <br>
-  <br>
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</p></div>
-<div class="about-bottom">
-    <h2>What i'm doing</h2>
-     <div class="grid">
-        <div class="web-design">
-        <div class="web-d-description">
-            <h2>Web Design</h2>
-        <p>The most modern and high-quality  design made at a professional level.</p>
-    </div>
-    <div class="web-d-icon">
-        <i class="fa-solid fa-pen-to-square"></i>
-    </div>
-        
-
-    </div>
-    <div class="web-development">
-   <div class="web-dev-description">
-    <h2>Web development</h2>
-    <p>Web development High-quality development <br> of sites at the professional level.</p>
-
-   </div>
-     <div class="web-dev-icon">
- <i class="fa-solid fa-laptop-code"></i>
-     </div>
-     
-
-    </div>
-
-
-    <div class="mobile-Apps">
-        <div class="mobile-descriotion">
-           <h2>Mobile apps</h2>
-           <p>Professional development of applications 
-           <br>for iOS and Android</p>
-        </div>
-        <div class="mobile-icon">
-    <i class="fa-solid fa-mobile-screen"></i>
-        </div>
-    </div>
-
-  
-    <div class="photography">
-        <div class="photo-description">
-            <h2>photography</h2>
-            <p>I make high-quality photos <br>   of any category at a professional level.</p>
-        </div>
-   <div class="photo-icon">
-    <i class="fa-solid fa-camera-retro"></i>
-    </div>
-
-    </div>
-   
-</div>
-     </div>
-
-
-       <!-- TEstimonials -->
-<div class="about-bottom-2">
-
-   <h2>Testimonials</h2>
-
-     <div class="testimonials">
-      
-    <div class="testimonial-card">
-        <div class="avatar">
-            <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-1.png" alt="Daniel Lewis">
+            <h2>Education</h2>
         </div>
 
-        <div class="testimonial-content">
-            <h2>Daniel Lewis</h2>
-            <p>
-                Richard was hired to create a corporate identity.
-                We were very pleased with the work...
-            </p>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Arba Minch University</h3>
+                    <span>2024 — Present</span>
+
+                    <p>
+                        I am currently studying Software Engineering
+                        at Arba Minch University in Ethiopia.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Gambool Secondary School</h3>
+                    <span>2019 — 2023</span>
+
+                    <p>
+                        I completed my secondary school education
+                        at Gambool Secondary School in Garowe.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Mustaqbal Primary School</h3>
+                    <span>2014 — 2018</span>
+
+                    <p>
+                        I started my primary education at Mustaqbal
+                        Primary School.
+                    </p>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
-    <div class="testimonial-card">
-        <div class="avatar">
-            <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-2.png" alt="Jessica Miller">
+
+    <!-- Experience -->
+    <div class="resume-section">
+
+        <div class="section-title">
+            <div class="title-icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <h2>Experience</h2>
         </div>
 
-        <div class="testimonial-content">
-            <h2>Jessica Miller</h2>
-            <p>
-                Richard was hired to create a corporate identity.
-                We were very pleased with the work...
-            </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Web Development</h3>
+                    <span>2025 — Present</span>
+
+                    <p>
+                        I am developing my skills in HTML, CSS and
+                        JavaScript by building personal and academic projects.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Software Engineering Projects</h3>
+                    <span>2024 — Present</span>
+
+                    <p>
+                        I have worked on different university projects
+                        including database systems, management systems
+                        and software design projects.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>Personal Projects</h3>
+                    <span>2025 — Present</span>
+
+                    <p>
+                        I create personal projects to improve my
+                        programming and web development skills.
+                    </p>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
-</div>
-</div>
- 
-    
-        </section>
-        <section id="portfolio" >
-            <h1>My Portfolio</h1>
-            <p>These are my projects.</p>
-        </section>
 
-        <section id="blog" >
-            <h1>My Blog</h1>
-            <p>These are my blog posts.</p>
-        </section>
+    <!-- Skills -->
+    <div class="skills-section">
 
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>You can contact me here.</p>
-        </section>
+        <h2>My Skills</h2>
 
-     </div>
+        <div class="skills-box">
 
-    
+            <!-- HTML -->
+            <div class="skill">
+                <div class="skill-info">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
 
-     <div class="side-part">
-     
-     </div>
-   </div>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+
+
+            <!-- CSS -->
+            <div class="skill">
+                <div class="skill-info">
+                    <span>CSS</span>
+                    <span>92%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+
+
+            <!-- JavaScript -->
+            <div class="skill">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>40%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress javascript"></div>
+                </div>
+            </div>
+
+
+            <!-- Java -->
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Java</span>
+                    <span>65%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress java"></div>
+                </div>
+            </div>
+
+
+            <!-- SQL -->
+            <div class="skill">
+                <div class="skill-info">
+                    <span>SQL</span>
+                    <span>95%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress sql"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+            </section>
+
+
+            <!-- ================= PORTFOLIO ================= -->
+
+            <section id="portfolio">
+
+                <h1>My Portfolio</h1>
+
+                <p>
+                    These are some of my projects.
+                </p>
+
+            </section>
+
+
+            <!-- ================= BLOG ================= -->
+
+            <section id="blog">
+
+                <h1>My Blog</h1>
+
+                <p>
+                    These are my blog posts.
+                </p>
+
+            </section>
+
+
+            <!-- ================= CONTACT ================= -->
+
+            <section id="contact">
+
+                <h1>Contact Me</h1>
+
+                <p>
+                    You can contact me here.
+                </p>
+
+            </section>
+
+        </div>
+
+
+        <!-- Side Part -->
+
+        <div class="side-part">
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
 
+
+
+
+
+
+
+<section id="about">
+
+    <!-- Education -->
+   
+
+</section>
