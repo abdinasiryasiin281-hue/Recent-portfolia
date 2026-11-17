@@ -1,389 +1,371 @@
-*{
+/* ==============================
+   GENERAL
+============================== */
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: #100f0f;
+    font-family: Poppins, Arial, sans-serif;
+    color: white;
+}
 
-.container{
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
     display: flex;
     flex-direction: row-reverse;
-    background-color: #100f0f;
-    justify-content: space-around;
-    max-width: 100vw;
 
+    gap: 25px;
+    padding: 25px;
 }
-.main{
-    width: 60rem;
-    height: 100%;
+
+
+/* ==============================
+   MAIN
+============================== */
+
+.main {
+    width: 100%;
+    max-width: 950px;
+
     background-color: #1e1e1f;
-    margin-block: 25px;
-    margin-inline: 10px;
-    border: 2px solid #1e1e1f;
-      margin-right: 30px;
+
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-  
 
+    padding: 25px;
+
+    min-height: 900px;
 }
 
-.maina .navigation{
-}
-.side-part{
-    width: 18rem;
-    height: 54rem;
+
+/* ==============================
+   SIDE PART
+============================== */
+
+.side-part {
+    width: 280px;
+    min-width: 280px;
+
+    height: 550px;
+
     background-color: #1e1e1f;
-    margin-inline: 10px;
-    margin-block: 25px;
-    padding-right: 30px;
-    border: 2px solid #1e1e1f;
+
     border-radius: 30px;
-    margin-left: 25px;
 }
 
-.main .navigation{
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+.navigation {
     display: flex;
-}
+    justify-content: flex-end;
+    align-items: center;
 
-.navigation{
-    margin-left: 30rem;
-    gap: 30px;
-    padding: 20px;
-    padding-left: 50px;
+    gap: 25px;
+
     background-color: #282829;
-    border: 5PX SOLID #282829;
+
+    padding: 20px;
+
     border-radius: 15px;
-    box-shadow: 2px 2px 0px;
 
-}
-
-#home, #about, #portfolio, #blog, #contact{
-    color: rgb(212, 220, 218);
-    margin-left: 60px;
-}
-.header-about h1{
-    font-family: Poppins, sans-serif;
-font-size: 40px;
-font-weight: 900px;
-color: white;
-}
-.header-about hr{
-    height: 7px;
-    width: 50px ;
-   background-color: #ffcd67;
-  margin-bottom: 40px;
-  margin-top: 10px;
-   border-radius: 20px;
+    margin-bottom: 35px;
 }
 
-.header-about p{
-    font-family: Poppins, sans-serif;
-font-size: 15px;
-font-weight: 300;
-line-height: 24px;
-color: #d6d6d6;
+.navigation button {
+    background: none;
+
+    border: none;
+
+    color: #d6d6d6;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-/* =========================
+.navigation button:hover {
+    color: #ffca4b;
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+.main section {
+    display: none;
+}
+
+.main section.active {
+    display: block;
+}
+
+
+/* ==============================
+   ABOUT
+============================== */
+
+.header-about h1 {
+    font-size: 40px;
+
+    font-weight: 700;
+
+    color: white;
+}
+
+.header-about hr {
+    width: 50px;
+
+    height: 6px;
+
+    background-color: #ffcd67;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+
+    margin-bottom: 40px;
+}
+
+.header-about p {
+    color: #d6d6d6;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ==============================
    WHAT I'M DOING
-========================= */
+============================== */
 
 .about-bottom {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
-/* Main title */
 .about-bottom > h2 {
     color: #f5f5f5;
+
     font-size: 30px;
-    font-weight: 700;
-    font-family: Poppins, sans-serif;
+
     margin-bottom: 25px;
 }
 
 
-/* =========================
-   GRID
-========================= */
+/* ==============================
+   SERVICE GRID
+============================== */
 
 .grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+
+    gap: 25px;
 }
 
 
-/* =========================
-   ALL CARDS
-========================= */
+/* ==============================
+   SERVICE CARD
+============================== */
 
-.web-design,
-.web-development,
-.mobile-Apps,
-.photography {
+.service-card {
     min-height: 210px;
 
     display: flex;
+
     align-items: center;
 
-    background: #202022;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background-color: #202022;
 
     border: 1px solid #38383a;
 
     border-radius: 20px;
 
-    padding: 30px 35px;
-flex-direction: row-reverse;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
+    padding: 30px;
 }
 
 
-/* =========================
-   DESCRIPTION
-========================= */
+/* Description */
 
-.web-d-description,
-.web-dev-description,
-.mobile-descriotion,
-.photo-description {
+.service-description {
     flex: 1;
 }
 
-
-/* =========================
-   H2
-========================= */
-
-.web-d-description h2,
-.web-dev-description h2,
-.mobile-descriotion h2,
-.photo-description h2 {
-
+.service-description h2 {
     color: #f5f5f5;
 
-    font-family: Poppins, sans-serif;
-
-    font-size: 25px;
-
-    font-weight: 700;
+    font-size: 23px;
 
     margin-bottom: 15px;
-
 }
 
-
-/* =========================
-   PARAGRAPH
-========================= */
-
-.web-d-description p,
-.web-dev-description p,
-.mobile-descriotion p,
-.photo-description p {
-
+.service-description p {
     color: #cfcfcf;
 
-    font-family: Poppins, sans-serif;
-
-    font-size: 18px;
+    font-size: 16px;
 
     line-height: 1.8;
-
-    font-weight: 400;
-
 }
 
 
-/* =========================
-   ICON
-========================= */
+/* Icon */
 
-.web-d-icon,
-.web-dev-icon,
-.mobile-icon,
-.photo-icon {
-
+.service-icon {
     width: 75px;
 
     display: flex;
 
     justify-content: center;
-    flex-direction: row-reverse;
 
     align-items: center;
 
     flex-shrink: 0;
-
 }
 
-
-/* Icon style */
-
-.web-d-icon i,
-.web-dev-icon i,
-.mobile-icon i,
-.photo-icon i {
-
+.service-icon i {
     color: #ffca4b;
 
-    font-size: 3.2rem;
-
+    font-size: 3rem;
 }
 
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* ==============================
+   TESTIMONIALS
+============================== */
 
-@media (max-width: 900px) {
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
+.about-bottom-2 {
+    margin-top: 45px;
 }
 
+.about-bottom-2 > h2 {
+    color: #f5f5f5;
 
+    font-size: 30px;
 
-  /* testmomia */
+    margin-bottom: 30px;
+}
 
-  .testimonials {
+.testimonials {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    gap: 45px;
-    padding: 60px 30px 30px;
-    background: #1d1d1f;
+
+    gap: 30px;
 }
 
-/* Card */
 .testimonial-card {
     position: relative;
-    min-height: 190px;
-    padding: 45px 45px 30px;
+
+    min-height: 200px;
+
+    padding: 50px 30px 30px;
+
+    background-color: #202022;
+
     border: 1px solid #3b3b3d;
+
     border-radius: 22px;
-    background: linear-gradient(
-        145deg,
-        #242426,
-        #1e1e20
-    );
 }
 
-/* Avatar */
 .avatar {
     position: absolute;
-    top: -47px;
-    left: 44px;
 
-    width: 120px;
-    height: 100px;
+    top: -10px;
 
-    border-radius: 30px;
-    background: #38383a;
+    left: 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 25px;
 
     overflow: hidden;
+
+    background-color: #38383a;
 }
 
 .avatar img {
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 }
 
-/* Name */
 .testimonial-content h2 {
-    margin: 0 0 22px 95px;
-
     color: #f5f5f5;
-    font-size: 27px;
-    font-weight: 700;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    margin-left: 100px;
 }
 
-/* Description */
 .testimonial-content p {
-    margin: 0;
-
     color: #c7c7c9;
-    font-size: 20px;
+
+    font-size: 15px;
+
     line-height: 1.8;
-    font-weight: 400;
-}
-  .about-bottom-2{
-    font-family: Poppins, sans-serif;
-font-size: 24px;
-font-weight: 700;
-color: #fafafa;
-margin-block: 30px;
-
-  }
-
-
-    /* resume-part */
-
-  #Resume {
-    padding: 2rem;
 }
 
-#Resume h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    color: #fafafa;
-    margin: 0;
+
+/* ==============================
+   RESUME
+============================== */
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    padding: 35px;
+    color: white;
 }
 
-.line {
-    border-top: 6px solid #ffc864;
-    width: 3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-    border-radius: 0.2rem;
-}
 
-.Education {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
+/* =========================
+   SECTION TITLE
+========================= */
 
-/* Vertical line */
-.Education::before {
-    content: "";
-    position: absolute;
-
-    left:3rem;
-    top: 3.74rem;
-
-    width: 2px;
-    height: calc(100% - 20px);
-
-    background-color: #a3883a;
-}
-
-.head {
+.section-title {
     display: flex;
     align-items: center;
-    margin: 0;
+    gap: 20px;
+    margin-bottom: 35px;
 }
 
-.head i {
-    font-size: 30px;
-    color: #a3883a;
-    background-color: #3535af;
-    border-radius: 30%;
-    padding: 15px 10px;
-    border: 2px solid #333333;
+.section-title h2 {
+    font-size: 32px;
+    color: white;
+}
 
+
+/* Icon box */
+
+.title-icon {
     width: 60px;
     height: 60px;
 
@@ -391,27 +373,333 @@ margin-block: 30px;
     align-items: center;
     justify-content: center;
 
-    margin-left: 1rem;
+    background: #202020;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.head h3 {
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #fafafa;
-    margin-left: 2rem;
+.title-icon i {
+    font-size: 28px;
+    color: #ffcc66;
 }
 
-.educational-detail {
-    margin-left: 7rem;
-    padding: 0.4rem;
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    position: relative;
+
+    margin-left: 25px;
+    padding-left: 35px;
+
+    border-left: 1px solid #3a3a3a;
+}
+
+
+/* Timeline item */
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 38px;
+}
+
+
+/* Yellow dot */
+
+.timeline-dot {
+    position: absolute;
+
+    left: -45px;
+    top: 5px;
+
+    width: 13px;
+    height: 13px;
+
+    background: #ffcc66;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 6px #303030;
+}
+
+
+/* Content */
+
+.timeline-content h3 {
+    font-size: 21px;
     color: white;
-    line-height: 2rem;
-}
- .main  section{
-    display: none;
+
+    margin-bottom: 10px;
 }
 
-.main section.active {
+.timeline-content span {
     display: block;
+
+    color: #ffcc66;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    max-width: 850px;
+
+    color: #c9c9c9;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+    margin-top: 50px;
+}
+
+.skills-section > h2 {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+
+/* Skills box */
+
+.skills-box {
+    background: #202020;
+
+    border: 1px solid #383838;
+
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+
+/* Individual skill */
+
+.skill {
+    margin-bottom: 28px;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Name + percentage */
+
+.skill-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+.skill-info span {
+    color: #e5e5e5;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+/* Background bar */
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+
+    background: #3a3a3a;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* Yellow progress */
+
+.progress {
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        to right,
+        #ffcc66,
+        #ffb347
+    );
+}
+
+
+/* Different percentages */
+
+.progress.html {
+    width: 90%;
+}
+
+.progress.css {
+    width: 92%;
+}
+
+.progress.javascript {
+    width: 40%;
+}
+
+.progress.java {
+    width: 65%;
+}
+
+.progress.sql {
+    width: 95%;
+}
+
+
+/* ==============================
+   OTHER SECTIONS
+============================== */
+
+#portfolio,
+#blog,
+#contact {
+    padding: 20px;
+}
+
+#portfolio h1,
+#blog h1,
+#contact h1 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+#portfolio p,
+#blog p,
+#contact p {
+    color: #cfcfcf;
+
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .main {
+        max-width: 100%;
+    }
+
+    .side-part {
+        width: 100%;
+
+        min-width: 0;
+
+        height: 250px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .main {
+        padding: 15px;
+
+        border-radius: 20px;
+    }
+
+    .navigation {
+        gap: 12px;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .navigation button {
+        font-size: 14px;
+    }
+
+    .header-about h1 {
+        font-size: 30px;
+    }
+
+    .about-bottom > h2,
+    .about-bottom-2 > h2 {
+        font-size: 25px;
+    }
+
+    .service-card {
+        padding: 20px;
+
+        min-height: 180px;
+    }
+
+    .service-description h2 {
+        font-size: 20px;
+    }
+
+    .service-description p {
+        font-size: 14px;
+    }
+
+    .service-icon {
+        width: 55px;
+    }
+
+    .service-icon i {
+        font-size: 2.2rem;
+    }
+
+    .testimonial-content h2 {
+        margin-left: 0;
+
+        margin-top: 15px;
+    }
+
+    .education-detail {
+        margin-left: 25px;
+    }
+
 }
