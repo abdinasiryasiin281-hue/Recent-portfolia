@@ -1,521 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Portfolio</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdinasir Yasiin — Software Engineering student interested in Cybersecurity and Web Development." />
+  <title>Abdinasir Yasiin | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <div class="container">
-
-        <!-- Main Section -->
-        <div class="main">
-
-            <!-- Navigation -->
-            <nav class="navigation">
-
-                <button onclick="showPage('about')">
-                    About
-                </button>
-
-                <button onclick="showPage('resume')">
-                    Resume
-                </button>
-
-                <button onclick="showPage('portfolio')">
-                    Portfolio
-                </button>
-
-                <button onclick="showPage('blog')">
-                    Blog
-                </button>
-
-                <button onclick="showPage('contact')">
-                    Contact
-                </button>
-
-            </nav>
-
-
-            <!-- ================= ABOUT ================= -->
-
-            <section id="about" class="active">
-
-                <div class="header-about">
-
-                    <h1>About Me</h1>
-
-                    <hr>
-
-                    <p>
-                        I'm a Software Engineering student from Puntland, Somalia,
-                        currently studying at Arba Minch University in Ethiopia.
-                        I enjoy developing websites and turning ideas into simple,
-                        beautiful, and user-friendly designs.
-
-                        <br><br>
-
-                        My goal is to build functional and attractive websites
-                        while continuously improving my programming and design
-                        skills through practical projects and learning.
-                    </p>
-
-                </div>
-
-
-                <!-- What I'm Doing -->
-
-                <div class="about-bottom">
-
-                    <h2>What I'm Doing</h2>
-
-                    <div class="grid">
-
-                        <!-- Web Design -->
-                        <div class="service-card">
-
-                            <div class="service-description">
-
-                                <h2>Web Design</h2>
-
-                                <p>
-                                    The most modern and high-quality designs
-                                    made at a professional level.
-                                </p>
-
-                            </div>
-
-                            <div class="service-icon">
-
-                                <i class="fa-solid fa-pen-to-square"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Web Development -->
-                        <div class="service-card">
-
-                            <div class="service-description">
-
-                                <h2>Web Development</h2>
-
-                                <p>
-                                    High-quality development of websites
-                                    at a professional level.
-                                </p>
-
-                            </div>
-
-                            <div class="service-icon">
-
-                                <i class="fa-solid fa-laptop-code"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Mobile Apps -->
-                        <div class="service-card">
-
-                            <div class="service-description">
-
-                                <h2>Mobile Apps</h2>
-
-                                <p>
-                                    Professional development of applications
-                                    for iOS and Android.
-                                </p>
-
-                            </div>
-
-                            <div class="service-icon">
-
-                                <i class="fa-solid fa-mobile-screen"></i>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- Photography -->
-                        <div class="service-card">
-
-                            <div class="service-description">
-
-                                <h2>Photography</h2>
-
-                                <p>
-                                    I make high-quality photos of different
-                                    categories at a professional level.
-                                </p>
-
-                            </div>
-
-                            <div class="service-icon">
-
-                                <i class="fa-solid fa-camera-retro"></i>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Testimonials -->
-
-                <div class="about-bottom-2">
-
-                    <h2>Testimonials</h2>
-
-                    <div class="testimonials">
-
-                        <div class="testimonial-card">
-
-                            <div class="avatar">
-
-                                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-1.png"
-                                    alt="Daniel Lewis">
-
-                            </div>
-
-                            <div class="testimonial-content">
-
-                                <h2>Daniel Lewis</h2>
-
-                                <p>
-                                    Richard was hired to create a corporate
-                                    identity. We were very pleased with the work.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="testimonial-card">
-
-                            <div class="avatar">
-
-                                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/avatar-2.png"
-                                    alt="Jessica Miller">
-
-                            </div>
-
-                            <div class="testimonial-content">
-
-                                <h2>Jessica Miller</h2>
-
-                                <p>
-                                    Richard was hired to create a corporate
-                                    identity. We were very pleased with the work.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- ================= RESUME ================= -->
-
-            <section id="resume">
-
-                <header>
-
-                    <h1>Resume</h1>
-
-                    <div class="line"></div>
-
-                </header>
-
-
-                <!-- Education -->
-
-               <div class="resume-section">
-
-        <div class="section-title">
-            <div class="title-icon">
-                <i class="fa-solid fa-book-open"></i>
-            </div>
-
-            <h2>Education</h2>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar"><img src="4733.jpg" alt=""></div>
+        <h1>Abdinasir Yasiin</h1>
+        <p class="role">Software Engineering Student</p>
+        <span class="status"><i></i> Open to learning opportunities</span>
+      </div>
+      <div class="side-line"></div>
+      <div class="contact-list">
+        <div class="contact-item"><span class="contact-icon">✉</span><div><small>EMAIL</small><a href="mailto:your-email@example.com">your-email@example.com</a></div></div>
+        <div class="contact-item"><span class="contact-icon">⌖</span><div><small>LOCATION</small><span>Ethiopia</span></div></div>
+        <div class="contact-item"><span class="contact-icon">⌘</span><div><small>GITHUB</small><a href="https://github.com/abdi-dev1" target="_blank" rel="noreferrer">github.com/abdi-dev1</a></div></div>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/abdi-dev1" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </aside>
+
+    <main class="main-card">
+      <nav class="navbar" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+        <div class="nav-links" id="navLinks">
+          <button class="nav-link active" data-section="about">About</button>
+          <button class="nav-link" data-section="skills">Resume</button>
+          <button class="nav-link" data-section="projects">Projects</button>
+          <button class="nav-link" data-section="contact">Contact</button>
+        </div>
+      </nav>
+
+      <section class="content-section active" id="about">
+        <div class="section-heading"><h2>About Me</h2><span></span></div>
+        <p class="intro">Hello! I'm <strong>Abdinasir Yasiin</strong>, a Software Engineering student who enjoys learning how technology works and building useful digital experiences.</p>
+        <p class="muted">I am developing my skills in web development and databases, and I have a strong interest in Cybersecurity. My goal is to keep learning, solve problems, and grow into a skilled technology professional.</p>
+
+        <h3 class="subheading">What I'm Interested In</h3>
+        <div class="interest-grid">
+          <article class="interest-card"><div class="interest-symbol">⌨</div><div><h4>Web Development</h4><p>Creating clean, responsive and user-friendly websites.</p></div></article>
+          <article class="interest-card"><div class="interest-symbol">⛨</div><div><h4>Cybersecurity</h4><p>Learning how to protect systems, networks and information.</p></div></article>
+          <article class="interest-card"><div class="interest-symbol">▤</div><div><h4>Database Systems</h4><p>Working with SQL and understanding how data is organized.</p></div></article>
+          <article class="interest-card"><div class="interest-symbol">✦</div><div><h4>Continuous Learning</h4><p>Practicing new concepts and improving step by step.</p></div></article>
         </div>
 
-        <div class="timeline">
+        
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Arba Minch University</h3>
-                    <span>2024 — Present</span>
-
-                    <p>
-                        I am currently studying Software Engineering
-                        at Arba Minch University in Ethiopia.
-                    </p>
-                </div>
+        <h3 class="subheading">Testimonials</h3>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-profile">
+              <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <h4>Mohamed Hassan</h4>
+                <span>Classmate</span>
+              </div>
             </div>
+            <p>"Abdinasir is a hardworking student who is always willing to learn new technologies and improve his skills."</p>
+          </article>
 
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Gambool Secondary School</h3>
-                    <span>2019 — 2023</span>
-
-                    <p>
-                        I completed my secondary school education
-                        at Gambool Secondary School in Garowe.
-                    </p>
-                </div>
+          <article class="testimonial-card">
+            <div class="testimonial-profile">
+              <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <h4>Ahmed Ali</h4>
+                <span>Project Partner</span>
+              </div>
             </div>
+            <p>"He is responsible, creative and focused when working on web development and software projects."</p>
+          </article>
 
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Mustaqbal Primary School</h3>
-                    <span>2014 — 2018</span>
-
-                    <p>
-                        I started my primary education at Mustaqbal
-                        Primary School.
-                    </p>
-                </div>
+          <article class="testimonial-card">
+            <div class="testimonial-profile">
+              <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <h4>Fatima Noor</h4>
+                <span>University Student</span>
+              </div>
             </div>
+            <p>"Abdinasir enjoys solving problems and sharing what he learns with other students."</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="skills">
+        <div class="section-heading"><h2>Resume</h2><span></span></div>
+
+        <h3 class="subheading resume-title">Education</h3>
+        <div class="education-timeline">
+
+          <div class="education-item">
+            <div class="timeline-dot"></div>
+            <div class="education-content">
+              <span class="timeline-date">2024 — Present</span>
+              <h4>University Level</h4>
+              <p class="muted"><strong>Arba Minch University</strong> — Software Engineering. Currently studying software development, databases, web development and computing.</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="timeline-dot"></div>
+            <div class="education-content">
+              <span class="timeline-date">2019 — 2023</span>
+              <h4>Secondary School</h4>
+              <p class="muted"><strong>Gambool Secondary School, Garowe</strong> — Completed secondary education and prepared for university studies.</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="timeline-dot"></div>
+            <div class="education-content">
+              <span class="timeline-date">2014 — 2018</span>
+              <h4>Primary School</h4>
+              <p class="muted"><strong>Mustaqbal Primary School</strong> — Completed primary-level education and built the foundation for further studies.</p>
+            </div>
+          </div>
 
         </div>
 
-    </div>
-
-
-    <!-- Experience -->
-    <div class="resume-section">
-
-        <div class="section-title">
-            <div class="title-icon">
-                <i class="fa-solid fa-briefcase"></i>
-            </div>
-
-            <h2>Experience</h2>
+        <h3 class="subheading resume-title">Skills</h3>
+        <p class="muted section-lead">These are the skill levels I currently use to track my learning progress.</p>
+        <div class="skills-panel">
+          <div class="skill"><div class="skill-label"><h4>HTML</h4><b>80%</b></div><div class="track"><span style="--level:80%"></span></div></div>
+          <div class="skill"><div class="skill-label"><h4>CSS</h4><b>90%</b></div><div class="track"><span style="--level:90%"></span></div></div>
+          <div class="skill"><div class="skill-label"><h4>Java</h4><b>60%</b></div><div class="track"><span style="--level:60%"></span></div></div>
+          <div class="skill"><div class="skill-label"><h4>SQL</h4><b>92%</b></div><div class="track"><span style="--level:92%"></span></div></div>
         </div>
+        <div class="note"><strong>Currently learning:</strong> JavaScript, modern web development and Cybersecurity fundamentals.</div>
+      </section>
 
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Web Development</h3>
-                    <span>2025 — Present</span>
-
-                    <p>
-                        I am developing my skills in HTML, CSS and
-                        JavaScript by building personal and academic projects.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Software Engineering Projects</h3>
-                    <span>2024 — Present</span>
-
-                    <p>
-                        I have worked on different university projects
-                        including database systems, management systems
-                        and software design projects.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-                    <h3>Personal Projects</h3>
-                    <span>2025 — Present</span>
-
-                    <p>
-                        I create personal projects to improve my
-                        programming and web development skills.
-                    </p>
-                </div>
-            </div>
-
+      <section class="content-section" id="projects">
+        <div class="section-heading"><h2>My Projects</h2><span></span></div>
+        <p class="muted section-lead">A place to showcase the projects you build as you continue learning.</p>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-art art-one">HTML / CSS</div><div class="project-info"><span class="project-type">WEB DEVELOPMENT</span><h3>Personal Portfolio</h3><p>A responsive personal website to introduce myself, show my skills and share my work.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></article>
+          <article class="project-card"><div class="project-art art-two">SQL</div><div class="project-info"><span class="project-type">DATABASE</span><h3>Database Practice</h3><p>Practice exercises for learning SQL queries and relational database concepts.</p><span class="tag">SQL</span><span class="tag">Database</span></div></article>
         </div>
+        <p class="small-hint">Replace these sample project cards with links and details about your real projects.</p>
+      </section>
 
-    </div>
-
-
-    <!-- Skills -->
-    <div class="skills-section">
-
-        <h2>My Skills</h2>
-
-        <div class="skills-box">
-
-            <!-- HTML -->
-            <div class="skill">
-                <div class="skill-info">
-                    <span>HTML</span>
-                    <span>90%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress html"></div>
-                </div>
-            </div>
-
-
-            <!-- CSS -->
-            <div class="skill">
-                <div class="skill-info">
-                    <span>CSS</span>
-                    <span>92%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress css"></div>
-                </div>
-            </div>
-
-
-            <!-- JavaScript -->
-            <div class="skill">
-                <div class="skill-info">
-                    <span>JavaScript</span>
-                    <span>40%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress javascript"></div>
-                </div>
-            </div>
-
-
-            <!-- Java -->
-            <div class="skill">
-                <div class="skill-info">
-                    <span>Java</span>
-                    <span>65%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress java"></div>
-                </div>
-            </div>
-
-
-            <!-- SQL -->
-            <div class="skill">
-                <div class="skill-info">
-                    <span>SQL</span>
-                    <span>95%</span>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress sql"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-            </section>
-
-
-            <!-- ================= PORTFOLIO ================= -->
-
-            <section id="portfolio">
-
-                <h1>My Portfolio</h1>
-
-                <p>
-                    These are some of my projects.
-                </p>
-
-            </section>
-
-
-            <!-- ================= BLOG ================= -->
-
-            <section id="blog">
-
-                <h1>My Blog</h1>
-
-                <p>
-                    These are my blog posts.
-                </p>
-            </section>
-
-
-            <!-- ================= CONTACT ================= -->
-
-            <section id="contact">
-
-                <h1>Contact Me</h1>
-
-                <p>
-                    You can contact me here.
-                </p>
-
-            </section>
-
-        </div>
-
-
-        <!-- Side Part -->
-
-        <div class="side-part">
-
-        </div>
-
-    </div>
-
-
-    <!-- JavaScript -->
-
-    <script src="script.js"></script>
-
+      <section class="content-section" id="contact">
+        <div class="section-heading"><h2>Contact Me</h2><span></span></div>
+        <p class="muted section-lead">Have a question, an idea or an opportunity to share? Send me a message.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row"><label>Your Name<input type="text" id="senderName" placeholder="Enter your name" required></label><label>Your Email<input type="email" id="senderEmail" placeholder="Enter your email" required></label></div>
+          <label>Your Message<textarea id="senderMessage" rows="5" placeholder="Write your message..." required></textarea></label>
+          <button class="primary-btn" type="submit">Prepare Email <span>↗</span></button>
+          <p class="form-note" id="formNote">This form opens your email app. Add your real email address in the HTML file first.</p>
+        </form>
+      </section>
+      <footer>© <span id="year"></span> Abdinasir Yasiin. Built with HTML, CSS & JavaScript.</footer>
+    </main>
+  </div>
 </body>
-
 </html>
-
-
-
-
-
-
-
