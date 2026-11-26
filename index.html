@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -155,11 +155,53 @@
       <section class="content-section" id="contact">
         <div class="section-heading"><h2>Contact Me</h2><span></span></div>
         <p class="muted section-lead">Have a question, an idea or an opportunity to share? Send me a message.</p>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row"><label>Your Name<input type="text" id="senderName" placeholder="Enter your name" required></label><label>Your Email<input type="email" id="senderEmail" placeholder="Enter your email" required></label></div>
-          <label>Your Message<textarea id="senderMessage" rows="5" placeholder="Write your message..." required></textarea></label>
-          <button class="primary-btn" type="submit">Prepare Email <span>↗</span></button>
-          <p class="form-note" id="formNote">This form opens your email app. Add your real email address in the HTML file first.</p>
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <div class="form-row">
+            <label>
+              Your Name
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              >
+            </label>
+
+            <label>
+              Your Email
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              >
+            </label>
+          </div>
+
+          <label>
+            Your Message
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+          <button class="primary-btn" type="submit">
+            Send Message <span>↗</span>
+          </button>
+
+          <p class="form-note">
+            Your message will be sent securely through Formspree.
+          </p>
         </form>
       </section>
       <footer>© <span id="year"></span> Abdinasir Yasiin. Built with HTML, CSS & JavaScript.</footer>
