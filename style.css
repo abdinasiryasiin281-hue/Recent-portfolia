@@ -69,8 +69,8 @@ textarea {
 ========================= */
 
 img {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 9rem;
 
   object-fit: cover;
 
@@ -80,8 +80,8 @@ img {
 
 /* Correct class selector */
 .avatar {
-  width: 112px;
-  height: 112px;
+  width: 9.375rem;
+  height: 9.375rem;
 
   border-radius: 26px;
 
